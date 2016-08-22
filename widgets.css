@@ -5,3 +5,46 @@
 .notBold {
   font-weight: normal;
 }
+
+.tabs ul {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  width: 200px;
+
+
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.tabs ul li {
+  justify-content: space-between;
+  padding: 5px;
+  border: 2px solid black;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-top-left-radius: 25%;
+  border-top-right-radius: 25%;
+  width: 33%;
+}
+
+.tabs ul:first-child {
+  border-left: 2px solid black;
+  border-top-left-radius: 25%;
+}
+
+.tabs ul li:hover {
+  background-color: black;
+  color: white;
+}
+
+.tabs article {
+  border: 2px solid black;
+  width: 200px;
+
+}

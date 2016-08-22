@@ -22,8 +22,10 @@ class Clock extends React.Component {
         <h1>Clock</h1>
         {displayDate}
         {displayTime}
+
       </div>);
   }
+
 
   updateClock() {
     this.setState({time:

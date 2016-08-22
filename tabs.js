@@ -20,7 +20,7 @@ class Tab extends React.Component {
     const content = <p> { this.props.tabData[1][this.state.selectedTab] } </p>;
 
     return (
-      <div>
+      <div className={"tabs"}>
         <ul>
           { titles }
         </ul>
