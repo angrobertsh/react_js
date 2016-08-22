@@ -33,12 +33,12 @@ class Weather extends React.Component {
 
   componentDidMount () {
     this.setState({text: "Loading..."});
-    this.getWeather.bind(this)();
+    // this.getWeather.bind(this)();
   }
 
   render () {
     return (
-      <div>{this.state.text}</div>
+      <div><h1>Weather</h1>{this.state.text}</div>
     );
   }
 }
