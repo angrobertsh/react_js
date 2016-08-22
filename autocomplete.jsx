@@ -1,3 +1,5 @@
+//const ReactCSSTransitionGroup = require('react-addons-css-transition-group');
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import React from 'react';
 class Autocomplete extends React.Component {
 
@@ -24,7 +26,7 @@ class Autocomplete extends React.Component {
       <div>
         <h1>Autocomplete</h1>
         <input id='input' type='text' onChange={this.handleInput.bind(this)}/>
-        <ul>{names}</ul>
+        <ul><ReactCSSTransitionGroup transitionName='auto' transitionEnterTimeout={500} transitionLeaveTimeout={0}>{names}</ReactCSSTransitionGroup></ul>
       </div>
     );
   }
